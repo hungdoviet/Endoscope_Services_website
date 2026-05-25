@@ -1,0 +1,74 @@
+# Security Headers
+<IfModule mod_headers.c>
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Endoscope Services Australia - SEO & Redirect Configuration
+
+Options -MultiViews
+DirectoryIndex index.html
+RewriteEngine On
+
+# 1. Force HTTPS and Strip WWW (always first)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.endoscopeservices\.com\.au$ [NC]
+RewriteRule ^(.*)$ https://endoscopeservices.com.au/$1 [L,R=301]
+
+# 2. Legacy URL Mapping - Fix Broken Google Links
+RewriteRule ^our-services/?$ /services [R=301,L,NC]
+RewriteRule ^flexible-endoscope-loaner/?$ /loan-endoscopes [R=301,L,NC]
+RewriteRule ^loan-endoscope-service-keep-your-clinic-running-without-downtime/?$ /loan-endoscopes [R=301,L,NC]
+
+# 3. Redirect index.php or index.html to / (Root)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.(html|php) [NC]
+RewriteRule ^ https://%{HTTP_HOST}/ [R=301,L]
+
+# 4. Extended Legacy URL Mapping
+RewriteRule ^sell-your-equipment/?$ /sell-equipment [R=301,L,NC]
+RewriteRule ^flexible-endoscope-repair/?$ /services [R=301,L,NC]
+RewriteRule ^gastroscope-repair-services/?$ /gastroscope-repair [R=301,L,NC]
+RewriteRule ^colonoscope-repair-services/?$ /colonoscope-repair [R=301,L,NC]
+RewriteRule ^warranty-policy(\.html)?$ /warranty [R=301,L,NC]
+RewriteRule ^contact-us/?$ /contact [R=301,L,NC]
+
+RewriteRule ^water-damage-inside-endoscopes-due-to-leakage/?$ /handling-procedures [R=301,L,NC]
+RewriteRule ^causes-of-endoscope-damage/?$ /handling-procedures [R=301,L,NC]
+RewriteRule ^[0-9]+-[0-9]+/?$ / [R=301,L,NC]
+RewriteRule ^category/.*$ / [R=301,L,NC]
+RewriteRule ^tag/.*$ / [R=301,L,NC]
+RewriteRule ^author/.*$ / [R=301,L,NC]
+RewriteRule ^wp-json/.*$ / [R=301,L,NC]
+RewriteRule ^search/.*$ / [R=301,L,NC]
+RewriteRule ^blog/.*$ / [R=301,L,NC]
+RewriteCond %{QUERY_STRING} s=.* [NC,OR]
+RewriteCond %{QUERY_STRING} search_term_string=.* [NC]
+RewriteRule ^$ /? [L,R=301]
+RewriteRule ^index\.php/contact-us/?$ /contact [R=301,L,NC]
+RewriteRule ^index\.php/.*$ / [R=301,L,NC]
+
+# 5. Clean URLs: Externally redirect /filename.html to /filename
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.*?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 6. Remove trailing slashes (except for real directories)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# 7. Internally map /filename back to /filename.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Specific internal rewrite for /warranty to /warranty-policy.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^warranty$ warranty-policy.html [L]
+
+# 8. Custom 404 Error Page
+ErrorDocument 404 /404.html
+

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /feed/
+Disallow: /search/
+Disallow: /*?s=
+Disallow: /*?search_term_string=
+Disallow: /*/feed/
+Disallow: /*/rss2/
+
+Sitemap: https://endoscopeservices.com.au/sitemap.xml
