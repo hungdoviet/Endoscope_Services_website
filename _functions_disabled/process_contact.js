@@ -22,7 +22,7 @@ export async function onRequestPost(context) {
         }
 
         // 2. Google reCAPTCHA v3 Verification
-        const recaptchaSecret = '6LdAA7AsAAAAAKuDStmbXnjBnF0LiJvQkCCl33PL';
+        const recaptchaSecret = context.env.RECAPTCHA_SECRET;
         const verifyResponse = await fetch('https://www.google.com/recaptcha/api/siteverify', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
