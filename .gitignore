@@ -11,3 +11,7 @@ desktop.ini
 *.njsproj
 *.sln
 *.swp
+
+# Local scratch and backups
+scratch/
+img_backup/
