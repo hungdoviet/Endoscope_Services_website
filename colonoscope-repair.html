@@ -35,47 +35,54 @@
     <!-- Schema.org for Google -->
     <script type="application/ld+json">
     [
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Endoscope Services Australia",
-        "image": "https://endoscopeservices.com.au/img/logo.png",
-        "@id": "https://endoscopeservices.com.au",
-        "url": "https://endoscopeservices.com.au",
-        "telephone": "+61448334797",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Barnett Grove",
-          "addressLocality": "Noble Park",
-          "addressRegion": "VIC",
-          "postalCode": "3174",
-          "addressCountry": "AU"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Colonoscope Repair",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Endoscope Services Australia"
+        {
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "Endoscope Services Australia",
+            "image": "https://endoscopeservices.com.au/img/logo.png",
+            "@id": "https://endoscopeservices.com.au",
+            "url": "https://endoscopeservices.com.au",
+            "telephone": "+61448334797",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3 Barnett Grove",
+                "addressLocality": "Noble Park",
+                "addressRegion": "VIC",
+                "postalCode": "3174",
+                "addressCountry": "AU"
+            },
+            "priceRange": "$$",
+            "areaServed": [
+                "Noble Park",
+                "Victoria",
+                "Australia"
+            ]
         },
-        "description": "Expert repair and rebuild of colonoscopes to OEM standards including insertion tube replacement, bending rubber replacement, and 40-point inspection.",
-        "areaServed": "AU",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Endoscope Repair Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Colonoscope Rebuild"
-              }
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Colonoscope Repair",
+            "provider": {
+                "@type": "MedicalBusiness",
+                "name": "Endoscope Services Australia",
+                "url": "https://endoscopeservices.com.au"
+            },
+            "description": "Expert repair and rebuild of colonoscopes to OEM standards including insertion tube replacement, bending rubber replacement, and 40-point inspection.",
+            "areaServed": "AU",
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Endoscope Repair Services",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Colonoscope Rebuild"
+                        }
+                    }
+                ]
             }
-          ]
         }
-      }
     ]
     </script>
 

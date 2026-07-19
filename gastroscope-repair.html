@@ -35,34 +35,41 @@
     <!-- Schema.org for Google -->
     <script type="application/ld+json">
     [
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Endoscope Services Australia",
-        "image": "https://endoscopeservices.com.au/img/logo.png",
-        "@id": "https://endoscopeservices.com.au",
-        "url": "https://endoscopeservices.com.au",
-        "telephone": "+61448334797",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Barnett Grove",
-          "addressLocality": "Noble Park",
-          "addressRegion": "VIC",
-          "postalCode": "3174",
-          "addressCountry": "AU"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Gastroscope Repair",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Endoscope Services Australia"
+        {
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "Endoscope Services Australia",
+            "image": "https://endoscopeservices.com.au/img/logo.png",
+            "@id": "https://endoscopeservices.com.au",
+            "url": "https://endoscopeservices.com.au",
+            "telephone": "+61448334797",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3 Barnett Grove",
+                "addressLocality": "Noble Park",
+                "addressRegion": "VIC",
+                "postalCode": "3174",
+                "addressCountry": "AU"
+            },
+            "priceRange": "$$",
+            "areaServed": [
+                "Noble Park",
+                "Victoria",
+                "Australia"
+            ]
         },
-        "description": "Precision repair services for gastroscopes including angulation adjustment, biopsy channel replacement, and image bundle repair.",
-        "areaServed": "AU"
-      }
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Gastroscope Repair",
+            "provider": {
+                "@type": "MedicalBusiness",
+                "name": "Endoscope Services Australia",
+                "url": "https://endoscopeservices.com.au"
+            },
+            "description": "Precision repair services for gastroscopes including angulation adjustment, biopsy channel replacement, and image bundle repair.",
+            "areaServed": "AU"
+        }
     ]
     </script>
 
