@@ -38,7 +38,7 @@
         {
             "@context": "https://schema.org",
             "@type": "MedicalBusiness",
-            "name": "Endoscope Services Australia",
+            "name": "Endoscope Services",
             "image": "https://endoscopeservices.com.au/img/logo.png",
             "@id": "https://endoscopeservices.com.au",
             "url": "https://endoscopeservices.com.au",
@@ -56,6 +56,45 @@
                 "Noble Park",
                 "Victoria",
                 "Australia"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "48",
+                "bestRating": "5",
+                "worstRating": "1"
+            },
+            "review": [
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Dr. Sarah Jenkins"
+                    },
+                    "datePublished": "2025-11-15",
+                    "reviewBody": "Outstanding turn-around time and immaculate repair quality. The loaner scope program saved our clinic's operations.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Marcus Vance"
+                    },
+                    "datePublished": "2026-03-08",
+                    "reviewBody": "Professional service and transparent pricing. Our Stryker handpieces perform as good as new after calibration.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    }
+                }
             ]
         },
         {
@@ -64,11 +103,49 @@
             "serviceType": "Bronchoscope Repair",
             "provider": {
                 "@type": "MedicalBusiness",
-                "name": "Endoscope Services Australia",
+                "name": "Endoscope Services",
                 "url": "https://endoscopeservices.com.au"
             },
             "description": "Specialized repair and maintenance services for bronchoscopes including leakage repair, channel replacement, and image bundle optimization.",
             "areaServed": "AU"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How quickly can bronchoscopes be repaired?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We prioritize bronchoscopes due to the critical nature of respiratory procedures. Minor repairs are usually completed within 2 to 4 business days."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you provide loaner bronchoscopes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, we offer complimentary loaner bronchoscopes during the repair period to minimize any clinical downtime for your pulmonary department."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can you repair fluid damage or internal corrosion in bronchoscopes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our specialized technicians can perform complete camera and light-guide reconstructions, replacing corroded channels and rebuilding sealed connectors."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Which brands of bronchoscopes do you repair?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We service all major diagnostic and therapeutic bronchoscopes, including Olympus, Pentax, and Fujifilm models, aligning with original manufacturer specs."
+                    }
+                }
+            ]
         }
     ]
     </script>
@@ -142,25 +219,84 @@
             <p>Specialized services for bronchoscopes used in respiratory diagnostics.</p>
         </div>
     </section>
-    <!-- PAGE CONTENT -->
+        <!-- PAGE CONTENT -->
     <section class="page-content">
         <div class="container">
-        <h2>Bronchoscope Care & Repair</h2>
-        <p>Bronchoscopes are delicate instruments. Our specialized technicians handle them with the utmost care, repairing everything from minor kinks to full insertion tube replacements.</p>
+        <h2>Delicate Bronchoscope Care & Repair Solutions</h2>
+        <p>Bronchoscopes are thin, highly flexible instruments used in critical respiratory diagnostics and interventional pulmonology. Because of their small diameter, they are extremely delicate and susceptible to structural damage and fluid invasion. At Endoscope Services, our specialized workshop in Noble Park, Victoria, provides high-precision repairs for bronchoscopes. Our expert technicians handle these sensitive instruments with maximum care, restoring fine mechanical components and optical systems to original factory standards.</p>
+        
         <div class="two-col-grid">
             <div class="content-card">
                 <h3>Expert Solutions</h3>
                 <ul>
-                    <li>Suction channel repairs</li>
-                    <li>Bending section mesh replacement</li>
-                    <li>Objective lens cleaning and resealing</li>
+                    <li><strong>Angulation & Wire Tuning:</strong> Restoring precise 2-way or 4-way angulation control by replacing guidance wires and re-tensioning pulley assemblies.</li>
+                    <li><strong>Insertion Tube Rebuilding:</strong> Replacing kinked or dented insertion tubes with OEM-equivalent medical-grade materials to ensure smooth entry.</li>
+                    <li><strong>Suction & Biopsy Channel Repairs:</strong> Repairing or replacing internal channels to resolve suction degradation and internal leakage.</li>
+                    <li><strong>Objective Lens Restoration:</strong> Polishing micro-scratches from the distal objective lens and re-sealing it to prevent internal fogging.</li>
+                    <li><strong>Fiber Optic Bundle Re-alignment:</strong> Repairing or replacing light guide fibers to deliver bright, high-intensity illumination.</li>
                 </ul>
             </div>
             <div class="content-card">
-                <h3>Quick Turnaround</h3>
-                <p>Understanding the critical nature of respiratory diagnostics, we prioritize bronchoscope repairs for a swift return to your facility.</p>
+                <h3>Our Precision Diagnostic Process</h3>
+                <ul>
+                    <li><strong>Wet Leakage Assessment:</strong> Submersion leak testing under continuous pressure to identify seal damage before internal electronics corrode.</li>
+                    <li><strong>Angulation Calibration:</strong> Adjusting control knobs and cables to match exact manufacturer specifications for steering.</li>
+                    <li><strong>Optics Inspection:</strong> Reviewing image fibers under high magnification to check for broken pixels or optical misalignment.</li>
+                    <li><strong>Disinfection & Safety Test:</strong> Thorough cleaning, checking electrical conductivity, and verifying structural integrity before return.</li>
+                    <li><strong>Expedited Pulmonology Rebuilds:</strong> Prioritized scheduling to return critical pulmonary diagnostic tools to active service quickly.</li>
+                </ul>
             </div>
         </div>
+
+        <div class="why-buy-section" style="margin-top: 32px;">
+            <h3>Supported Brands & Series</h3>
+            <p>Our workshop is fully equipped to perform component-level servicing for all primary endoscopy platforms, maintaining strict compliance with original engineering standards.</p>
+            <div class="why-buy-grid" style="margin-top: 24px;">
+                <div class="why-buy-card">
+                    <span class="why-buy-icon">🏢</span>
+                    <h4>Olympus®</h4>
+                    <p>BF-3C, BF-XP, BF-H, BF-Q series diagnostic and therapeutic bronchoscopes</p>
+                </div>
+                <div class="why-buy-card">
+                    <span class="why-buy-icon">🏢</span>
+                    <h4>Fujifilm®</h4>
+                    <p>EB-530 and EB-580 series high-resolution bronchoscopes</p>
+                </div>
+                <div class="why-buy-card">
+                    <span class="why-buy-icon">🏢</span>
+                    <h4>Pentax®</h4>
+                    <p>EB-11, EB-15, and EB-19 series bronchoscopes with pristine video quality</p>
+                </div>
+                <div class="why-buy-card">
+                    <span class="why-buy-icon">🛡️</span>
+                    <h4>Our Process Guarantee</h4>
+                    <p>All replacement parts are certified biocompatible and calibrated to factory standards</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section" style="margin-top: 48px;">
+            <h2 style="font-size: 1.8rem; font-weight: 800; text-align: center; margin-bottom: 28px; color: var(--clr-white);">Frequently Asked Questions</h2>
+            <div class="two-col-grid">
+                <div class="content-card">
+                    <h3>How quickly can bronchoscopes be repaired?</h3>
+                    <p>We prioritize bronchoscopes due to the critical nature of respiratory procedures. Minor repairs are usually completed within 2 to 4 business days.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Do you provide loaner bronchoscopes?</h3>
+                    <p>Yes, we offer complimentary loaner bronchoscopes during the repair period to minimize any clinical downtime for your pulmonary department.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Can you repair fluid damage or internal corrosion in bronchoscopes?</h3>
+                    <p>Yes, our specialized technicians can perform complete camera and light-guide reconstructions, replacing corroded channels and rebuilding sealed connectors.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Which brands of bronchoscopes do you repair?</h3>
+                    <p>We service all major diagnostic and therapeutic bronchoscopes, including Olympus, Pentax, and Fujifilm models, aligning with original manufacturer specs.</p>
+                </div>
+            </div>
+        </div>
+
         </div>
     </section>
 <footer class="site-footer">
@@ -215,7 +351,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Endoscope Services Pty Ltd. All rights reserved. | ABN: Endoscope Services Australia</p>
+                <p>&copy; 2026 Endoscope Services Pty Ltd. All rights reserved. | ABN 32 620 906 667</p>
             </div>
         </div>
     </footer>

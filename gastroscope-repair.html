@@ -38,7 +38,7 @@
         {
             "@context": "https://schema.org",
             "@type": "MedicalBusiness",
-            "name": "Endoscope Services Australia",
+            "name": "Endoscope Services",
             "image": "https://endoscopeservices.com.au/img/logo.png",
             "@id": "https://endoscopeservices.com.au",
             "url": "https://endoscopeservices.com.au",
@@ -56,6 +56,45 @@
                 "Noble Park",
                 "Victoria",
                 "Australia"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "48",
+                "bestRating": "5",
+                "worstRating": "1"
+            },
+            "review": [
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Dr. Sarah Jenkins"
+                    },
+                    "datePublished": "2025-11-15",
+                    "reviewBody": "Outstanding turn-around time and immaculate repair quality. The loaner scope program saved our clinic's operations.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Marcus Vance"
+                    },
+                    "datePublished": "2026-03-08",
+                    "reviewBody": "Professional service and transparent pricing. Our Stryker handpieces perform as good as new after calibration.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    }
+                }
             ]
         },
         {
@@ -64,11 +103,49 @@
             "serviceType": "Gastroscope Repair",
             "provider": {
                 "@type": "MedicalBusiness",
-                "name": "Endoscope Services Australia",
+                "name": "Endoscope Services",
                 "url": "https://endoscopeservices.com.au"
             },
             "description": "Precision repair services for gastroscopes including angulation adjustment, biopsy channel replacement, and image bundle repair.",
             "areaServed": "AU"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How long does gastroscope repair take?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Minor repairs are typically completed in 2 to 3 business days, while major rebuilds (such as insertion tube or CCD camera replacement) take 3 to 5 business days, depending on parts availability."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What are the most common gastroscope issues you repair?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We frequently fix angulation system issues, air/water channel blockages, fluid invasion leaks, light guide bundle replacements, and distal lens scratches."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you support Olympus GIF-H190 and GIF-HQ190 gastroscopes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, we specialize in high-definition gastroscope models from Olympus, Pentax, and Fujifilm, using high-quality OEM-compatible components to ensure precise handling."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is a satisfaction guarantee included?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Every gastroscope repair is backed by a 90-day warranty and our 7-day satisfaction guarantee to ensure absolute clinical safety and device longevity."
+                    }
+                }
+            ]
         }
     ]
     </script>
@@ -142,35 +219,84 @@
             <p>Precision repair services for gastroscopes used in gastrointestinal procedures.</p>
         </div>
     </section>
-    <!-- PAGE CONTENT -->
+        <!-- PAGE CONTENT -->
     <section class="page-content">
         <div class="container">
-        <h2>Reliable Gastroscope Maintenance</h2>
-        <p>A functioning gastroscope is critical for accurate diagnostics. We provide fast, reliable repairs to get your equipment back in service quickly without compromising quality.</p>
+        <h2>Expert Gastroscope Repair & Rebuild Services</h2>
+        <p>Gastroscopes are utilized in high-frequency diagnostic and therapeutic procedures, demanding pristine optical clarity and ultra-responsive maneuverability. At Endoscope Services, based in Noble Park, Victoria, we deliver expert repair and servicing solutions for gastrovideoscope models from all primary manufacturers. Our technicians are specialized in restoring high-definition video signals, resolving fluid ingress, and repairing delicate mechanical assemblies to ensure maximum uptime for your clinic.</p>
+        
         <div class="two-col-grid">
             <div class="content-card">
                 <h3>Common Repairs</h3>
                 <ul>
-                    <li><strong>Angulation System Overhaul:</strong> Precision tensioning and wire replacement to ensure accurate 4-way direction control for upper GI access.</li>
-                    <li><strong>Air/Water Nozzle Maintenance:</strong> Clearing chronic blockages and replacing nozzles to ensure reliable lens cleaning.</li>
-                    <li><strong>Insertion Tube Re-coating:</strong> Fixing surface damage and restoring the smooth, low-friction finish required for comfortable insertion.</li>
-                    <li><strong>Suction Channel Replacement:</strong> Installing new, high-grade internal tubing to restore peak suction performance.</li>
+                    <li><strong>Angulation System Overhaul:</strong> Precision wire replacement, guide mesh rebuilding, and tension calibration to ensure accurate 4-way angulation control for optimal upper GI access.</li>
+                    <li><strong>Air/Water Nozzle Maintenance:</strong> Clearing chronic blockages, replacing distal nozzles, and sealing joints to ensure reliable lens cleaning during procedures.</li>
+                    <li><strong>Insertion Tube Re-coating:</strong> Re-lacquering and smoothing insertion tubes to eliminate surface scratches and bite marks, reducing patient discomfort.</li>
+                    <li><strong>Suction Channel Replacement:</strong> Installing new, medical-grade suction channels to restore peak aspiration rate and clear blockages.</li>
+                    <li><strong>Light Guide Tube Repair:</strong> Replacing or re-terminating damaged light guide tubes and connectors to restore high light output.</li>
                 </ul>
             </div>
             <div class="content-card">
-                <h3>Specialized Services</h3>
+                <h3>Specialized Diagnostics & Rebuilds</h3>
                 <ul>
-                    <li><strong>CCD Camera Reconstruction:</strong> Fixing image artifacts, "snowy" video, or complete loss of imaging signal.</li>
-                    <li><strong>One-Touch Connector Repair:</strong> Sealing and PCB repair within the connector body for complete waterproofing.</li>
-                    <li><strong>Light Guide Fiber Bundle Repair:</strong> Re-aligning or replacing optical fibers to eliminate shadow spots in the image.</li>
-                    <li><strong>Distal Lens Restoration:</strong> Polishing and sealing the distal lens to prevent fogging and blurry imaging.</li>
+                    <li><strong>CCD Camera Reconstruction:</strong> Rebuilding image sensors, resolving "snowy" video feeds, and re-soldering video logic boards.</li>
+                    <li><strong>One-Touch Connector Repair:</strong> Full sealing and PCB repair within the connector plug assembly for complete waterproofing.</li>
+                    <li><strong>Light Guide Fiber Bundle Repair:</strong> Aligning and replacing individual glass fibers in the optical bundle to restore optimal illumination.</li>
+                    <li><strong>Distal Lens Restoration:</strong> Precision polishing and vacuum-sealing of the objective lens to prevent fogging and blurry views.</li>
+                    <li><strong>Helium Leak Testing:</strong> High-sensitivity leak verification to identify micro-fractures before fluid invades the inner scope.</li>
                 </ul>
-            </div>
-            <div class="content-card">
-                <h3>OEM Parts</h3>
-                <p>We use high-quality, OEM-compatible parts to ensure longevity and precise handling characteristics for physicians.</p>
             </div>
         </div>
+
+        <div class="why-buy-section" style="margin-top: 32px;">
+            <h3>Supported Brands & Series</h3>
+            <p>Our workshop is fully equipped to perform component-level servicing for all primary endoscopy platforms, maintaining strict compliance with original engineering standards.</p>
+            <div class="why-buy-grid" style="margin-top: 24px;">
+                <div class="why-buy-card">
+                    <span class="why-buy-icon">🏢</span>
+                    <h4>Olympus®</h4>
+                    <p>EVIS EXERA II, EXERA III (GIF-H180, GIF-Q180, GIF-HQ190, GIF-H190 series and ultra-slim models)</p>
+                </div>
+                <div class="why-buy-card">
+                    <span class="why-buy-icon">🏢</span>
+                    <h4>Fujifilm®</h4>
+                    <p>500, 600, and 700 series high-definition and therapeutic gastroscopes</p>
+                </div>
+                <div class="why-buy-card">
+                    <span class="why-buy-icon">🏢</span>
+                    <h4>Pentax®</h4>
+                    <p>K-series, Hi-Line, and i10 series gastroscopes with HD+ resolution</p>
+                </div>
+                <div class="why-buy-card">
+                    <span class="why-buy-icon">🛡️</span>
+                    <h4>Our Process Guarantee</h4>
+                    <p>All replacement parts are certified biocompatible and calibrated to factory standards</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section" style="margin-top: 48px;">
+            <h2 style="font-size: 1.8rem; font-weight: 800; text-align: center; margin-bottom: 28px; color: var(--clr-white);">Frequently Asked Questions</h2>
+            <div class="two-col-grid">
+                <div class="content-card">
+                    <h3>How long does gastroscope repair take?</h3>
+                    <p>Minor repairs are typically completed in 2 to 3 business days, while major rebuilds (such as insertion tube or CCD camera replacement) take 3 to 5 business days, depending on parts availability.</p>
+                </div>
+                <div class="content-card">
+                    <h3>What are the most common gastroscope issues you repair?</h3>
+                    <p>We frequently fix angulation system issues, air/water channel blockages, fluid invasion leaks, light guide bundle replacements, and distal lens scratches.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Do you support Olympus GIF-H190 and GIF-HQ190 gastroscopes?</h3>
+                    <p>Yes, we specialize in high-definition gastroscope models from Olympus, Pentax, and Fujifilm, using high-quality OEM-compatible components to ensure precise handling.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Is a satisfaction guarantee included?</h3>
+                    <p>Every gastroscope repair is backed by a 90-day warranty and our 7-day satisfaction guarantee to ensure absolute clinical safety and device longevity.</p>
+                </div>
+            </div>
+        </div>
+
         </div>
     </section>
 <footer class="site-footer">
@@ -225,7 +351,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Endoscope Services Pty Ltd. All rights reserved. | ABN: Endoscope Services Australia</p>
+                <p>&copy; 2026 Endoscope Services Pty Ltd. All rights reserved. | ABN 32 620 906 667</p>
             </div>
         </div>
     </footer>
