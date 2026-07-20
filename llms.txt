@@ -1,0 +1,32 @@
+# Endoscope Services Australia
+
+> Endoscope Services Australia is a specialized medical equipment repair, rebuild, and maintenance facility based in Noble Park, Melbourne, Victoria. We service flexible endoscopes (colonoscopes, gastroscopes, bronchoscopes) and surgical power tools for public hospitals, private hospitals, and day surgeries Australia-wide.
+
+## Core Repair Services
+- [Colonoscope Repair](https://endoscopeservices.com.au/colonoscope-repair): Comprehensive inspection, insertion tube replacement, bending rubber re-meshing, CCD sensor repairs, and 40-point safety compliance testing.
+- [Gastroscope Repair](https://endoscopeservices.com.au/gastroscope-repair): Precision repair of gastroscopes including angulation adjustment, air/water & biopsy channel replacements, and image bundle restoration.
+- [Bronchoscope Repair](https://endoscopeservices.com.au/bronchoscope-repair): Specialized flexible bronchoscope maintenance, fluid invasion leak repair, optical fiber bundle alignment, and distal end sealing.
+- [Surgical Power Tool Repair](https://endoscopeservices.com.au/surgical-power-tools): Maintenance and overhaul for pneumatic, battery, and electric surgical drills, saws, and handpieces.
+- [Specialty Flexible Endoscope Repair](https://endoscopeservices.com.au/services): Specialized repair and rebuilds for specialty flexible video scopes including Olympus CYF-VH (Cystoscope), ENF-V3 (ENT Rhynolaryngoscope), URF-V3 (Ureteroscope), as well as standard GI scopes (CF-HQ190, GIF-HQ190, PCF-H190DL).
+- [Endoscope Repair Services Overview](https://endoscopeservices.com.au/services): Complete service catalog and preventative maintenance options.
+
+## Sales & Trade-In
+- [Refurbished Equipment for Sale](https://endoscopeservices.com.au/equipment-for-sale): Pre-owned, certified, and fully refurbished flexible endoscopes with warranty.
+- [Sell & Trade-In Equipment](https://endoscopeservices.com.au/sell-equipment): Sell surplus endoscopes or trade them in for repair credits.
+
+## Client Support & Logistics
+- [Loan Endoscope Program](https://endoscopeservices.com.au/loan-endoscopes): Complimentary loan scopes available to ensure zero operational downtime during repairs.
+- [Loaner Terms & Conditions](https://endoscopeservices.com.au/loaner-tc): Detailed policy regarding loaner scope dispatch and care.
+- [Warranty Policy](https://endoscopeservices.com.au/warranty): Comprehensive 90-day to 12-month warranty coverage on all repairs and refurbished equipment.
+- [Handling & Care Guidelines](https://endoscopeservices.com.au/handling-procedures): Guidelines for leak testing, reprocessing, and handling to extend instrument lifespan.
+
+## Workshop & Contact Details
+- **Business Name**: Endoscope Services Australia
+- **Address**: 3 Barnett Grove, Noble Park, VIC 3174, Australia
+- **Phone**: +61 448 334 797 (Peter) | +61 435 730 477 (Kevin)
+- **Emails**: peter@endoscopeservices.com.au, kevin@endoscopeservices.com.au
+- **Website**: https://endoscopeservices.com.au
+- **Contact Page**: [Contact Us](https://endoscopeservices.com.au/contact)
+
+## Full AI Documentation
+- [llms-full.txt](https://endoscopeservices.com.au/llms-full.txt): Detailed technical specifications, 40-point inspection checklist, brand compatibility list, and comprehensive FAQ repository.

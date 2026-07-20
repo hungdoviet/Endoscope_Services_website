@@ -1,0 +1,97 @@
+# Endoscope Services Australia — Full Technical & Service Documentation
+
+> Endoscope Services Australia (located at 3 Barnett Grove, Noble Park VIC 3174) is Australia's premier independent medical equipment service facility. We specialize in the repair, overhaul, and preventative maintenance of flexible endoscopes, rigid endoscopes, and surgical power tools for healthcare facilities across Victoria, New South Wales, Queensland, South Australia, Western Australia, Tasmania, Northern Territory, and ACT.
+
+---
+
+## 1. Company Profile & Workshop Location
+
+- **Legal / Trading Name**: Endoscope Services Australia
+- **Facility Address**: 3 Barnett Grove, Noble Park, VIC 3174, Australia
+- **Telephone**: +61 448 334 797
+- **Direct Contacts**:
+  - Peter: 0448 334 797 | peter@endoscopeservices.com.au
+  - Kevin: 0435 730 477 | kevin@endoscopeservices.com.au
+- **Operating Hours**: Monday – Friday, 9:00 AM – 5:00 PM AEST
+- **Service Area**: Australia-wide (Noble Park workshop with express courier logistics across all states)
+
+---
+
+## 2. Core Repair Capabilities & Technical Breakdown
+
+### A. Colonoscope Repair & Rebuild
+- **Insertion Tube Replacement**: Replacement of damaged, kinked, or fluid-invaded insertion tubes using medical-grade materials with Responsive Insertion Technology (RIT) compliance.
+- **Bending Section Re-build**: Complete mesh replacement, angulation wire tensioning, and bending rubber seal re-sheathing to restore 4-way direction control.
+- **Biopsy & Suction Channel Replacement**: Installation of internal high-durability PTFE channels to resolve leaks, blockages, or internal surface degradation.
+- **Image Sensor (CCD / CMOS) Repair**: Restoration of high-definition digital video output, color fidelity correction, and repair of electronic pin connectors.
+- **Air / Water Nozzle & Channel Servicing**: High-pressure flushing, nozzle realignments, and internal tube replacement to ensure clear lens washing during colonoscopies.
+- **Leak Testing & Fluid Invasion Decontamination**: Diagnostic dry-pressure testing to identify micro-perforations before corrosion causes electronic failure.
+
+### B. Gastroscope Repair
+- **Angulation Control Realignment**: Restoring precise up/down and left/right deflection angles to meet original OEM specifications.
+- **Light Guide Bundle Replacement**: Fitting high-efficiency optical fiber bundles to restore maximum light transmission and eliminate dark shadows.
+- **Distal End & Objective Lens Polishing**: Precision optical polishing to eliminate scratch artifacts and clear blurred vision.
+- **Universal Cord & Light Guide Connector Rebuilds**: Structural strain-relief boot replacement and video plug re-soldering.
+
+### C. Bronchoscope Repair
+- **Ultra-Fine Insertion Tube Repair**: Servicing narrow-diameter flexible bronchoscopes used in pulmonary diagnostics and ICU procedures.
+- **Channel Sealing & Moisture Protection**: Specialized hydrophobic sealing to withstand chemical disinfection and autoclaving (where applicable).
+- **Distal Bending Rubber Replacement**: Sealing delicate distal tips against fluid penetration.
+
+### D. Surgical Power Tools
+- **Pneumatic, Battery & Electric Systems**: Repairing surgical drills, saws, reamers, and attachments used in orthopedics, neurosurgery, and ENT.
+- **Motor & Bearing Replacement**: Overhauling high-speed motors, replacing worn bearings, and renewing O-ring seals.
+- **Handpiece Autoclave Seal Testing**: Ensuring moisture-tight seals for steam sterilization reliability.
+
+---
+
+## 3. Supported OEM Brands & Equipment
+
+Endoscope Services Australia services major global OEM brands, including but not limited to:
+- **Flexible Endoscopes**: Olympus (EVIS EXERA I/II/III, VISERA, 160/180/190 series, including CYF-VH Flexible Video Cystoscope, ENF-V3 ENT Rhynolaryngoscope, URF-V3 Ureteroscope, CF-HQ190, GIF-HQ190, PCF-H190DL), Pentax (i10, 90i, K-series), Fujifilm (600/700 series).
+- **Surgical Power Tools**: Stryker, Hall / ConMed, Synthes, Zimmer Biomet, Anspach, MicroAire.
+
+---
+
+## 4. Quality Assurance & 40-Point Inspection Process
+
+Every scope sent to our Noble Park workshop undergoes a rigorous 40-point diagnostic inspection prior to repair and before return dispatch:
+1. Dry pressure leak testing under distilled water immersion.
+2. Angular deflection range measurement (up/down, left/right).
+3. Image resolution, color balance, and optic noise measurement.
+4. Optical light transmission output test (lux level measurement).
+5. Biopsy channel insertion resistance check with standard force gauge.
+6. Suction rate & air/water flow rate verification.
+7. Electrical continuity and video signal stability test.
+8. Physical outer sheath surface inspection for micro-cracks or chemical degradation.
+9. Final post-repair electrical safety & leak test before dispatch.
+
+---
+
+## 5. Loaner Scope Program & Logistics
+
+- **Zero-Downtime Guarantee**: We provide complimentary loan endoscopes (colonoscopes, gastroscopes) for the duration of the repair.
+- **Express Shipping**: Loaner scopes are dispatched via overnight express courier across Victoria and Australia.
+- **Loaner Terms**: Loan scopes must be returned in clean, disinfected condition upon completion of repair work.
+
+---
+
+## 6. Frequently Asked Questions (FAQ Repository)
+
+### Q: Where is your endoscope repair workshop located?
+A: Our primary workshop is located at 3 Barnett Grove, Noble Park, VIC 3174, Australia. We serve healthcare facilities across Melbourne, regional Victoria, and nationwide via secure medical logistics.
+
+### Q: How long does a standard colonoscope or gastroscope repair take?
+A: Minor repairs and routine servicing typically take 24–48 hours. Major rebuilds (such as full insertion tube or bending section replacements) take 3–5 business days. Free loaner scopes are available to cover urgent procedures.
+
+### Q: Do you provide loaner scopes while our equipment is being repaired?
+A: Yes! We maintain a comprehensive fleet of loaner flexible endoscopes (Olympus, Pentax, Fujifilm) available to clients nationwide to prevent clinical schedule interruptions.
+
+### Q: Are repairs covered by warranty?
+A: Yes. All repairs and refurbished equipment sales come with a comprehensive warranty (ranging from 90 days to 12 months depending on the service level), covering both parts and labor.
+
+### Q: What brands of endoscopes do you repair?
+A: We repair all major flexible endoscope manufacturers, including Olympus, Pentax, and Fujifilm, as well as rigid scopes and surgical power tools from Stryker, Hall, and Synthes.
+
+### Q: How can I request a quote or organize a repair pickup?
+A: You can call Peter directly at 0448 334 797 (+61 448 334 797), call Kevin at 0435 730 477, or email kevin@endoscopeservices.com.au / peter@endoscopeservices.com.au.

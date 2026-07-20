@@ -12,6 +12,7 @@ desktop.ini
 *.sln
 *.swp
 
-# Local scratch and backups
-scratch/
+# Backups and temporary files
 img_backup/
+scratch/
+

@@ -388,14 +388,6 @@ ul { list-style: none; }
     font-size: clamp(1rem, 2vw, 1.2rem);
     color: #475569;
     max-width: 640px;
-    margin: 0 auto 20px;
-    line-height: 1.8;
-}
-
-.hero-intro {
-    font-size: 1.05rem;
-    color: #475569;
-    max-width: 760px;
     margin: 0 auto 40px;
     line-height: 1.8;
 }
