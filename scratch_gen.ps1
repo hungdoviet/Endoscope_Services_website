@@ -171,7 +171,6 @@ $pages = @(
         content  = @"
         <h2>Preventing Endoscope Damage</h2>
         <p>The majority of endoscope repairs are due to handling damage. Proper care and handling can significantly extend the life of your equipment and reduce repair costs.</p>
-        <div class="two-col-grid">
             <div class="content-card">
                 <h3>Best Practices</h3>
                 <ul>
@@ -181,11 +180,6 @@ $pages = @(
                     <li>Always attach water-resistant caps before leak testing.</li>
                 </ul>
             </div>
-            <div class="content-card">
-                <h3>Staff Training</h3>
-                <p>We offer on-site educational sessions for your clinical and reprocessing staff to reinforce proper handling protocols.</p>
-            </div>
-        </div>
 "@
     },
     @{
