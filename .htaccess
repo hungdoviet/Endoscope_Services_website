@@ -34,7 +34,7 @@ RewriteRule ^flexible-endoscope-repair/?$ /services [R=301,L,NC]
 RewriteRule ^gastroscope-repair-services/?$ /gastroscope-repair [R=301,L,NC]
 RewriteRule ^colonoscope-repair-services/?$ /colonoscope-repair [R=301,L,NC]
 RewriteRule ^warranty-policy(\.html)?$ /warranty [R=301,L,NC]
-RewriteRule ^contact-us/?$ /contact [R=301,L,NC]
+RewriteRule ^contact-us(\.html)?/?$ /contact [R=301,L,NC]
 
 RewriteRule ^water-damage-inside-endoscopes-due-to-leakage/?$ /handling-procedures [R=301,L,NC]
 RewriteRule ^causes-of-endoscope-damage/?$ /handling-procedures [R=301,L,NC]
