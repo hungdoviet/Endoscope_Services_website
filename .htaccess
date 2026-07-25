@@ -65,10 +65,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
-# Specific internal rewrite for /warranty to /warranty-policy.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^warranty$ warranty-policy.html [L]
-
 # 8. Custom 404 Error Page
 ErrorDocument 404 /404.html
 
