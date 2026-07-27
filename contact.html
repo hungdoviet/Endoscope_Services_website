@@ -35,7 +35,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "MedicalBusiness"],
       "name": "Endoscope Services Australia",
       "image": "https://endoscopeservices.com.au/img/logo.png",
       "@id": "https://endoscopeservices.com.au/",
@@ -66,7 +66,12 @@
         ],
         "opens": "09:00",
         "closes": "17:00"
-      }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Melbourne" },
+        { "@type": "AdministrativeArea", "name": "Victoria" },
+        { "@type": "Country", "name": "Australia" }
+      ]
     }
     </script>
 
