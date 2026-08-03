@@ -36,13 +36,17 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": [
+        "LocalBusiness",
+        "MedicalBusiness",
+        "ProfessionalService"
+      ],
       "name": "Endoscope Services Australia",
       "image": "https://endoscopeservices.com.au/img/logo.png",
       "@id": "https://endoscopeservices.com.au/",
       "url": "https://endoscopeservices.com.au/",
       "telephone": "+61 448 334 797",
-      "priceRange": "$$",
+      "priceRange": "$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "3 Barnett Grove",
@@ -67,7 +71,21 @@
         ],
         "opens": "09:00",
         "closes": "17:00"
-      }
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Melbourne"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Victoria"
+        },
+        {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      ]
     }
     </script>
 
@@ -79,7 +97,11 @@
       "serviceType": "Gastroscope Repair",
       "name": "Gastroscope Repair & Maintenance Services Melbourne",
       "provider": {
-        "@type": "LocalBusiness",
+        "@type": [
+          "LocalBusiness",
+          "MedicalBusiness",
+          "ProfessionalService"
+        ],
         "name": "Endoscope Services Australia",
         "telephone": "+61 448 334 797",
         "address": {
@@ -93,9 +115,18 @@
       },
       "description": "Precision repair services for gastroscopes including angulation adjustment, biopsy channel replacement, image bundle repair, and CCD reconstruction in Noble Park, Melbourne.",
       "areaServed": [
-        { "@type": "City", "name": "Melbourne" },
-        { "@type": "AdministrativeArea", "name": "Victoria" },
-        { "@type": "Country", "name": "Australia" }
+        {
+          "@type": "City",
+          "name": "Melbourne"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Victoria"
+        },
+        {
+          "@type": "Country",
+          "name": "Australia"
+        }
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",

@@ -38,13 +38,17 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "MedicalBusiness"],
+      "@type": [
+        "LocalBusiness",
+        "MedicalBusiness",
+        "ProfessionalService"
+      ],
       "name": "Endoscope Services Australia",
       "image": "https://endoscopeservices.com.au/img/logo.png",
       "@id": "https://endoscopeservices.com.au/",
       "url": "https://endoscopeservices.com.au/",
       "telephone": "+61 448 334 797",
-      "priceRange": "$$",
+      "priceRange": "$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "3 Barnett Grove",
@@ -55,7 +59,7 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -37.9657, 
+        "latitude": -37.9657,
         "longitude": 145.1841
       },
       "openingHoursSpecification": {
@@ -71,9 +75,18 @@
         "closes": "17:00"
       },
       "areaServed": [
-        { "@type": "City", "name": "Melbourne" },
-        { "@type": "AdministrativeArea", "name": "Victoria" },
-        { "@type": "Country", "name": "Australia" }
+        {
+          "@type": "City",
+          "name": "Melbourne"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Victoria"
+        },
+        {
+          "@type": "Country",
+          "name": "Australia"
+        }
       ]
     }
     </script>
