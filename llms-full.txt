@@ -1,6 +1,6 @@
 # Endoscope Services Australia — Full Technical & Service Documentation
 
-> Endoscope Services Australia (located at 3 Barnett Grove, Noble Park VIC 3174) is Australia's premier independent medical equipment service facility. We specialize in the repair, overhaul, and preventative maintenance of flexible endoscopes, rigid endoscopes, and surgical power tools for healthcare facilities across Victoria, New South Wales, Queensland, South Australia, Western Australia, Tasmania, Northern Territory, and ACT.
+> Endoscope Services Australia (located at 3 Barnett Grove, Noble Park, Victoria 3174, Australia) is Australia's premier independent medical equipment service facility. We specialize in the repair, overhaul, and preventative maintenance of flexible endoscopes, rigid endoscopes, and surgical power tools for healthcare facilities across Victoria, New South Wales, Queensland, South Australia, Western Australia, Tasmania, Northern Territory, and ACT.
 
 ---
 
@@ -8,7 +8,7 @@
 
 - **Legal / Trading Name**: Endoscope Services Australia
 - **ABN**: 32 620 906 667
-- **Facility Address**: 3 Barnett Grove, Noble Park, VIC 3174, Australia
+- **Facility Address**: 3 Barnett Grove, Noble Park, Victoria 3174, Australia
 - **Telephone**: +61 448 334 797
 - **Direct Contacts**:
   - Peter: 0448 334 797 | peter@endoscopeservices.com.au
@@ -80,7 +80,7 @@ Every scope sent to our Noble Park workshop undergoes a rigorous 40-point diagno
 ## 6. Frequently Asked Questions (FAQ Repository)
 
 ### Q: Where is your endoscope repair workshop located?
-A: Our primary workshop is located at 3 Barnett Grove, Noble Park, VIC 3174, Australia. We serve healthcare facilities across Melbourne, regional Victoria, and nationwide via secure medical logistics.
+A: Our primary workshop is located at 3 Barnett Grove, Noble Park, Victoria 3174, Australia. We serve healthcare facilities across Melbourne, regional Victoria, and nationwide via secure medical logistics.
 
 ### Q: How long does a standard colonoscope or gastroscope repair take?
 A: Minor repairs and routine servicing typically take 24–48 hours. Major rebuilds (such as full insertion tube or bending section replacements) take 3–5 business days. Free loaner scopes are available to cover urgent procedures.
