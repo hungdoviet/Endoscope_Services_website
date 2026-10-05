@@ -16,6 +16,19 @@
     <title>Endoscope Repair &amp; Maintenance | Melbourne VIC</title>
     <meta name="description" content="Comprehensive flexible endoscope, colonoscope, gastroscope, bronchoscope & power tool repair services based in Noble Park, Melbourne VIC.">
     <link rel="canonical" href="https://endoscopeservices.com.au/services">
+    <!-- Canonical extension redirect: /page.html -> /page -->
+    <script>
+        (function() {
+            var p = window.location.pathname;
+            if (p === '/index.html') {
+                window.location.replace('/' + window.location.search + window.location.hash);
+            } else if (p.endsWith('/index.html')) {
+                window.location.replace(p.slice(0, -10) + window.location.search + window.location.hash);
+            } else if (p.endsWith('.html')) {
+                window.location.replace(p.slice(0, -5) + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
     <link rel="alternate" type="text/markdown" title="LLM-friendly version" href="/llms.txt" />
     <link rel="alternate" type="text/markdown" title="LLM-friendly full version" href="/llms-full.txt" />
     
@@ -409,6 +422,7 @@
 </body>
 
 </html>
+
 
 
 

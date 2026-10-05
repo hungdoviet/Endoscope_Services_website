@@ -16,6 +16,19 @@
     <title>Endoscope Repair Warranty Policy | Endoscope Services</title>
     <meta name="description" content="Comprehensive warranty coverage on flexible endoscope & surgical power tool repairs (90 days standard, up to 8 months for major overhauls) and refurbished equipment sales (8 months).">
     <link rel="canonical" href="https://endoscopeservices.com.au/warranty">
+    <!-- Canonical extension redirect: /page.html -> /page -->
+    <script>
+        (function() {
+            var p = window.location.pathname;
+            if (p === '/index.html') {
+                window.location.replace('/' + window.location.search + window.location.hash);
+            } else if (p.endsWith('/index.html')) {
+                window.location.replace(p.slice(0, -10) + window.location.search + window.location.hash);
+            } else if (p.endsWith('.html')) {
+                window.location.replace(p.slice(0, -5) + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
     <link rel="alternate" type="text/markdown" title="LLM-friendly version" href="/llms.txt" />
     
     <!-- Open Graph / Social Media -->
@@ -327,3 +340,4 @@
 </body>
 
 </html>
+

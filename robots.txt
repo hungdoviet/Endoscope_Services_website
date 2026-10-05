@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /_tools/
+Disallow: /_functions_disabled/
 
 Sitemap: https://endoscopeservices.com.au/sitemap.xml
 

@@ -16,6 +16,19 @@
     <title>Endoscope Handling & Care Guide | Endoscope Services</title>
     <meta name="description" content="Best practices for flexible endoscope care, cleaning, leak testing, and handling procedures to minimize equipment damage and repair costs.">
     <link rel="canonical" href="https://endoscopeservices.com.au/handling-procedures">
+    <!-- Canonical extension redirect: /page.html -> /page -->
+    <script>
+        (function() {
+            var p = window.location.pathname;
+            if (p === '/index.html') {
+                window.location.replace('/' + window.location.search + window.location.hash);
+            } else if (p.endsWith('/index.html')) {
+                window.location.replace(p.slice(0, -10) + window.location.search + window.location.hash);
+            } else if (p.endsWith('.html')) {
+                window.location.replace(p.slice(0, -5) + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
     <link rel="alternate" type="text/markdown" title="LLM-friendly version" href="/llms.txt" />
     
     <!-- Open Graph / Social Media -->
@@ -282,6 +295,7 @@
 </body>
 
 </html>
+
 
 
 
