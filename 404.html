@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found | Endoscope Services</title>
     <meta name="description" content="The page you are looking for does not exist. Return to Endoscope Services home page for repair services.">
+    <meta name="robots" content="noindex, follow">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +25,59 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Trailing-slash redirect: /services/ → /services -->
+    <!-- Legacy & Trailing-slash redirect handler -->
     <script>
         (function() {
-            var path = window.location.pathname;
-            if (path.length > 1 && path.slice(-1) === '/') {
-                window.location.replace(path.slice(0, -1) + window.location.search + window.location.hash);
+            var rawPath = window.location.pathname;
+            var clean = rawPath.replace(/\/+$/, '').toLowerCase();
+            
+            var map = {
+                '/services': '/services',
+                '/our-services': '/services',
+                '/flexible-endoscope-repair': '/services',
+                '/colonoscope-repair': '/colonoscope-repair',
+                '/colonoscope-repair-services': '/colonoscope-repair',
+                '/gastroscope-repair': '/gastroscope-repair',
+                '/gastroscope-repair-services': '/gastroscope-repair',
+                '/bronchoscope-repair': '/bronchoscope-repair',
+                '/surgical-power-tools': '/surgical-power-tools',
+                '/sell-equipment': '/sell-equipment',
+                '/sell-your-equipment': '/sell-equipment',
+                '/equipment-for-sale': '/equipment-for-sale',
+                '/handling-procedures': '/handling-procedures',
+                '/handling-equipment': '/handling-procedures',
+                '/causes-of-endoscope-damage': '/handling-procedures',
+                '/water-damage-inside-endoscopes-due-to-leakage': '/handling-procedures',
+                '/broken-angulation-in-flexible-endoscopes': '/handling-procedures',
+                '/contact': '/contact',
+                '/contact-us': '/contact',
+                '/contact-us.html': '/contact',
+                '/loan-endoscopes': '/loan-endoscopes',
+                '/flexible-endoscope-loaner': '/loan-endoscopes',
+                '/loan-endoscope-service-keep-your-clinic-running-without-downtime': '/loan-endoscopes',
+                '/loaner-tc': '/loaner-tc',
+                '/warranty': '/warranty',
+                '/warranty-policy': '/warranty',
+                '/warranty-policy.html': '/warranty'
+            };
+
+            if (map[clean]) {
+                window.location.replace(map[clean] + window.location.search + window.location.hash);
+                return;
+            }
+
+            if (clean.indexOf('/wp-content') === 0 || 
+                clean.indexOf('/wp-json') === 0 || 
+                clean.indexOf('/category') === 0 || 
+                clean.indexOf('/tag') === 0 || 
+                clean.indexOf('/author') === 0 ||
+                /^\/[0-9]+-[0-9]+$/.test(clean)) {
+                window.location.replace('/' + window.location.search + window.location.hash);
+                return;
+            }
+
+            if (rawPath.length > 1 && rawPath.slice(-1) === '/') {
+                window.location.replace(rawPath.slice(0, -1) + window.location.search + window.location.hash);
             }
         })();
     </script>
