@@ -1,0 +1,37 @@
+# ===================================================
+# ENDOSCOPE SERVICES - CANONICAL 301 REDIRECTS
+# For Cloudflare Pages, Netlify & Edge Proxies
+# ===================================================
+
+# 1. Root and Clean URL Canonicals (.html -> extensionless)
+/index.html                                                     /                               301!
+/services.html                                                  /services                       301!
+/colonoscope-repair.html                                        /colonoscope-repair             301!
+/gastroscope-repair.html                                        /gastroscope-repair             301!
+/bronchoscope-repair.html                                       /bronchoscope-repair            301!
+/surgical-power-tools.html                                      /surgical-power-tools           301!
+/equipment-for-sale.html                                        /equipment-for-sale             301!
+/sell-equipment.html                                            /sell-equipment                 301!
+/handling-procedures.html                                       /handling-procedures            301!
+/contact.html                                                   /contact                        301!
+/loan-endoscopes.html                                           /loan-endoscopes                301!
+/loaner-tc.html                                                 /loaner-tc                      301!
+/warranty.html                                                  /warranty                       301!
+
+# 2. Legacy URL Redirects
+/contact-us.html                                                /contact                        301!
+/contact-us                                                     /contact                        301!
+/our-services                                                   /services                       301!
+/flexible-endoscope-loaner                                      /loan-endoscopes                301!
+/loan-endoscope-service-keep-your-clinic-running-without-downtime /loan-endoscopes              301!
+/sell-your-equipment                                            /sell-equipment                 301!
+/flexible-endoscope-repair                                      /services                       301!
+/gastroscope-repair-services                                    /gastroscope-repair             301!
+/colonoscope-repair-services                                    /colonoscope-repair             301!
+/warranty-policy.html                                           /warranty                       301!
+/warranty-policy                                                /warranty                       301!
+/water-damage-inside-endoscopes-due-to-leakage                  /handling-procedures            301!
+/causes-of-endoscope-damage                                     /handling-procedures            301!
+
+# 3. Catch-all for any other .html page
+/*.html                                                          /:splat                         301!

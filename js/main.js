@@ -54,7 +54,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.service-card, .highlight-card, .feature-item, .process-step, .content-card, .contact-detail, .hiw-step').forEach(el => {
+document.querySelectorAll('.service-card, .highlight-card, .feature-item, .process-step, .content-card, .contact-detail, .hiw-step, .faq-accordion-item').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
