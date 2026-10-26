@@ -94,7 +94,7 @@ if (contactForm) {
                         if (key !== 'website') data[key] = value;
                     });
                     
-                    fetch('https://workflow.ezzones.com/webhook/form-submit', {
+                    fetch('https://workflow.forexdaily.ezzones.com/webhook/form-submit', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'

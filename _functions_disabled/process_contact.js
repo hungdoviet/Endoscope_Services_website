@@ -38,7 +38,7 @@ export async function onRequestPost(context) {
         }
 
         // 3. Prepare Webhook Payload
-        const webhookUrl = "https://workflow.ezzones.com/webhook/form-submit";
+        const webhookUrl = "https://workflow.forexdaily.ezzones.com/webhook/form-submit";
         const payload = { name, facility, email, service, message };
 
         // 4. Dispatch to n8n via fetch
