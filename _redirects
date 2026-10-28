@@ -18,7 +18,21 @@
 /loaner-tc.html                                                 /loaner-tc                      301!
 /warranty.html                                                  /warranty                       301!
 
-# 2. Legacy URL Redirects
+# 2. Trailing Slash Canonicals (/page/ -> /page)
+/services/                                                      /services                       301!
+/colonoscope-repair/                                            /colonoscope-repair             301!
+/gastroscope-repair/                                            /gastroscope-repair             301!
+/bronchoscope-repair/                                           /bronchoscope-repair            301!
+/surgical-power-tools/                                          /surgical-power-tools           301!
+/equipment-for-sale/                                            /equipment-for-sale             301!
+/sell-equipment/                                                /sell-equipment                 301!
+/handling-procedures/                                           /handling-procedures            301!
+/contact/                                                       /contact                        301!
+/loan-endoscopes/                                               /loan-endoscopes                301!
+/loaner-tc/                                                     /loaner-tc                      301!
+/warranty/                                                      /warranty                       301!
+
+# 3. Legacy URL Redirects
 /contact-us.html                                                /contact                        301!
 /contact-us                                                     /contact                        301!
 /our-services                                                   /services                       301!
@@ -33,5 +47,5 @@
 /water-damage-inside-endoscopes-due-to-leakage                  /handling-procedures            301!
 /causes-of-endoscope-damage                                     /handling-procedures            301!
 
-# 3. Catch-all for any other .html page
+# 4. Catch-all for any other .html page
 /*.html                                                          /:splat                         301!

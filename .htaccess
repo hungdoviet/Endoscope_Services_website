@@ -56,7 +56,8 @@ RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.*?)\.html[\s?] [NC]
 RewriteCond %1 !^index$ [NC]
 RewriteRule ^ https://%{HTTP_HOST}/%1 [R=301,L]
 
-# 6. Remove trailing slashes (except for real directories)
+# 6. Remove trailing slashes (Canonical pages explicitly, and any non-directories)
+RewriteRule ^(services|colonoscope-repair|gastroscope-repair|bronchoscope-repair|surgical-power-tools|equipment-for-sale|sell-equipment|handling-procedures|contact|loan-endoscopes|loaner-tc|warranty)/$ /$1 [R=301,L,NC]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
 

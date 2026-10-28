@@ -229,14 +229,46 @@ ul { list-style: none; }
     font-size: 1.05rem;
     font-weight: 600;
     color: #475569;
-    transition: var(--transition);
+    transition: color 0.25s ease, background-color 0.25s ease;
     white-space: nowrap;
+    position: relative;
 }
-.nav-link:hover, .nav-link.active {
-    color: var(--clr-white);
-    background: rgba(15,23,42,0.06);
+.nav-link:hover,
+.has-dropdown:hover > .nav-link {
+    color: var(--clr-primary);
 }
-.dropdown-arrow { font-size: 0.75em; opacity: 0.6; }
+.nav-link.active {
+    color: var(--clr-primary);
+}
+/* Blue underline running from left to right on hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 14px;
+    right: 14px;
+    height: 3px;
+    background: var(--clr-primary);
+    border-radius: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover::after,
+.has-dropdown:hover > .nav-link::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.dropdown-arrow { font-size: 0.75em; opacity: 0.6; transition: transform 0.3s ease, opacity 0.2s ease; }
+.nav-link:hover .dropdown-arrow,
+.has-dropdown:hover > .nav-link .dropdown-arrow,
+.nav-link.active .dropdown-arrow {
+    opacity: 1;
+}
 
 /* ── Dropdown ── */
 .has-dropdown { position: relative; }
@@ -1086,6 +1118,9 @@ ul { list-style: none; }
         padding: 14px 20px !important; 
         text-align: left !important;
     }
+    .nav-link::after {
+        display: none !important;
+    }
 
 
     .has-dropdown .dropdown-menu {
@@ -1312,6 +1347,119 @@ ul { list-style: none; }
     margin-top: auto;
     width: 100%;
     justify-content: center;
+}
+
+/* ──────────────────────────────────────────────────
+   TECHNICAL STEP-BY-STEP OVERHAUL PROCEDURES
+   ────────────────────────────────────────────────── */
+.tech-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+.tech-step-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    position: relative;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+.tech-step-card:hover {
+    border-color: rgba(2, 132, 199, 0.35);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+.tech-step-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.tech-step-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.12), rgba(6, 182, 212, 0.12));
+    border: 1px solid rgba(2, 132, 199, 0.25);
+    color: var(--clr-primary);
+    font-size: 1.15rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+.tech-step-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--clr-white);
+    line-height: 1.35;
+    margin: 0;
+}
+.tech-step-desc {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.subpage-block {
+    margin-top: 3.5rem;
+}
+.subpage-block:first-of-type {
+    margin-top: 0;
+}
+.subpage-block h2 {
+    font-size: clamp(1.4rem, 2.8vw, 2rem);
+    font-weight: 800;
+    color: var(--clr-white);
+    margin-bottom: 10px;
+}
+.subpage-block p.section-lead {
+    color: var(--clr-mid);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-bottom: 24px;
+}
+.subpage-cta-box {
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.08), rgba(6, 182, 212, 0.05));
+    border: 1px solid rgba(2, 132, 199, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 36px 32px;
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.subpage-cta-box h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--clr-white);
+    margin-bottom: 6px;
+}
+.subpage-cta-box p {
+    color: #475569;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .tech-steps-grid {
+        grid-template-columns: 1fr;
+    }
+    .subpage-cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* ──────────────────────────────────────────────────
