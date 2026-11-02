@@ -957,65 +957,211 @@ ul { list-style: none; }
    ────────────────────────────────────────────────── */
 .contact-layout {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 60px;
-    align-items: start;
-    padding: 80px 0;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 48px;
+    align-items: stretch;
+    padding: 10px 0 48px;
+}
+.contact-info-block {
+    display: flex;
+    flex-direction: column;
 }
 .contact-info-block h2 {
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
     font-weight: 800;
     color: var(--clr-white);
-    margin-bottom: 20px;
+    margin: 0 0 16px 0;
+    line-height: 1.25;
 }
-.contact-info-block p {
+.contact-info-block > p {
     color: #475569;
     line-height: 1.8;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+}
+.contact-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
 }
 .contact-detail {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(15,23,42,0.06);
+    margin-bottom: 0;
+    padding: 22px 24px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(15,23,42,0.08);
     border-radius: var(--radius-md);
     transition: var(--transition);
 }
-.contact-detail:hover { border-color: rgba(14,165,233,0.25); }
-.contact-detail-icon { font-size: 1.5rem; flex-shrink: 0; }
+.contact-detail:hover {
+    border-color: rgba(14,165,233,0.35);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
+.contact-detail-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.12), rgba(6, 182, 212, 0.12));
+    border: 1px solid rgba(2, 132, 199, 0.2);
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
 .contact-detail-text h4 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--clr-white);
     margin-bottom: 4px;
 }
 .contact-detail-text p, .contact-detail-text a {
-    font-size: 0.88rem;
+    font-size: 0.92rem;
     color: #475569;
     line-height: 1.6;
     margin: 0;
 }
-.contact-detail-text a { color: var(--clr-primary); }
+.contact-detail-text a {
+    color: var(--clr-primary);
+    font-weight: 500;
+}
+.contact-detail-text a:hover {
+    text-decoration: underline;
+}
+
+/* ── Contact Bottom 3-Card Grid ── */
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 8px;
+}
+.contact-extra-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+.contact-extra-card:hover {
+    border-color: rgba(2, 132, 199, 0.35);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+.contact-extra-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+.contact-extra-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.12), rgba(6, 182, 212, 0.12));
+    border: 1px solid rgba(2, 132, 199, 0.25);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+.contact-extra-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--clr-white);
+    margin: 0;
+    line-height: 1.3;
+}
+.contact-extra-card p {
+    font-size: 0.94rem;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+}
+.contact-extra-card p:last-child {
+    margin-bottom: 0;
+}
+.contact-extra-card ul {
+    margin: 4px 0 0 0;
+    padding-left: 20px;
+}
+.contact-extra-card ul li {
+    font-size: 0.92rem;
+    color: #475569;
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
+.contact-extra-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* ── Contact Map Block ── */
+.contact-map-card {
+    margin-top: 32px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+.contact-map-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 22px 28px;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    flex-wrap: wrap;
+}
+.contact-map-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.contact-map-title h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--clr-white);
+    margin: 0;
+}
+.contact-map-title span {
+    font-size: 0.9rem;
+    color: var(--clr-mid);
+}
+.contact-map-frame {
+    width: 100%;
+    height: 360px;
+    border: 0;
+    display: block;
+}
 
 /* ── Contact Form ── */
 .contact-form-wrapper {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(15,23,42,0.06);
+    border: 1px solid rgba(15,23,42,0.08);
     border-radius: var(--radius-lg);
-    padding: 44px;
+    padding: 40px 44px;
+    box-shadow: var(--shadow-sm);
 }
 .contact-form-wrapper h3 {
     font-size: 1.4rem;
     font-weight: 800;
     color: var(--clr-white);
-    margin-bottom: 28px;
+    margin: 0 0 24px 0;
 }
 .form-group { margin-bottom: 20px; }
 .form-group label {
@@ -1090,6 +1236,7 @@ ul { list-style: none; }
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
     .about-grid { grid-template-columns: 1fr; gap: 48px; }
     .how-it-works-steps { grid-template-columns: repeat(2, 1fr); }
+    .contact-cards-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {

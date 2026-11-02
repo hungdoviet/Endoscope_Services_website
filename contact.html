@@ -193,48 +193,101 @@
         </div>
     </section>
     <!-- PAGE CONTENT -->
-    <section class="page-content">
+    <section class="page-content page-content--wide">
         <div class="container">
-        <div class="contact-layout">
-            <div class="contact-info-block">
-                <h2>Let's discuss your repair needs</h2>
-                <p>Reach out to discuss your equipment repair, request a loaner, or find out more about our maintenance plans. We work directly with endoscopy nurses, biomedical engineers, and hospital procurement teams across Victoria and Australia-wide — so there's no need to go through a third party. You deal with the technicians who actually work on your equipment.</p>
-                
-                <div class="contact-detail">
-                    <div class="contact-detail-icon">&#x1F4CD;</div>
-                    <div class="contact-detail-text">
-                        <h4>Head Office</h4>
-                        <p>3 Barnett Grove, Noble Park<br>Victoria 3174, Australia</p>
-                    </div>
-                </div>
-                
-                <div class="contact-detail">
-                    <div class="contact-detail-icon">&#x1F4DE;</div>
-                    <div class="contact-detail-text">
-                        <h4>Peter (Phone &amp; Email)</h4>
-                        <a href="tel:0448334797">0448 334 797</a><br>
-                        <a href="mailto:peter@endoscopeservices.com.au">peter@endoscopeservices.com.au</a>
-                    </div>
-                </div>
+            <div class="contact-layout">
+                <div class="contact-info-block">
+                    <div class="section-label" style="align-self: flex-start;">Direct Technician Support</div>
+                    <h2>Let's discuss your repair needs</h2>
+                    <p>Reach out to discuss your equipment repair, request a loaner, or find out more about our maintenance plans. We work directly with endoscopy nurses, biomedical engineers, and hospital procurement teams across Victoria and Australia-wide — so there's no need to go through a third party. You deal with the technicians who actually work on your equipment.</p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">&#x1F4CD;</div>
+                            <div class="contact-detail-text">
+                                <h4>Head Office &amp; Workshop</h4>
+                                <p>3 Barnett Grove, Noble Park<br>Victoria 3174, Australia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">&#x1F4DE;</div>
+                            <div class="contact-detail-text">
+                                <h4>Peter (Phone &amp; Email)</h4>
+                                <a href="tel:0448334797">0448 334 797</a><br>
+                                <a href="mailto:peter@endoscopeservices.com.au">peter@endoscopeservices.com.au</a>
+                            </div>
+                        </div>
 
-                <div class="contact-detail">
-                    <div class="contact-detail-icon">&#x1f4de;</div>
-                    <div class="contact-detail-text">
-                        <h4>Kevin (Phone &amp; Email)</h4>
-                        <a href="tel:0435730477">0435 730 477</a><br>
-                        <a href="mailto:kevin@endoscopeservices.com.au">kevin@endoscopeservices.com.au</a>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">&#x1F4DE;</div>
+                            <div class="contact-detail-text">
+                                <h4>Kevin (Phone &amp; Email)</h4>
+                                <a href="tel:0435730477">0435 730 477</a><br>
+                                <a href="mailto:kevin@endoscopeservices.com.au">kevin@endoscopeservices.com.au</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="e.g. Dr. Sarah Miller">
+                            </div>
+                            <div class="form-group">
+                                <label for="facility">Facility / Hospital</label>
+                                <input type="text" id="facility" name="facility" required placeholder="e.g. Royal Melbourne Hospital">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="name@hospital.com.au">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option>General Inquiry</option>
+                                <option>Repair Quote</option>
+                                <option>Loaner Request</option>
+                                <option>Sell Equipment</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <div style="display:none;">
+                            <label>Leave this field empty</label>
+                            <input type="text" name="website" autocomplete="off">
+                        </div>
+                        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+                    </form>
+                </div>
+            </div>
 
-                <div class="content-card" style="margin-top: 28px;">
-                    <h4>Business Hours</h4>
-                    <p>Monday – Friday: 9:00 am – 5:00 pm AEST<br>
-                    Weekend &amp; Public Holidays: Closed</p>
+            <!-- 3-COLUMN BOTTOM INFO BLOCKS -->
+            <div class="contact-cards-grid">
+                <div class="contact-extra-card">
+                    <div class="contact-extra-header">
+                        <div class="contact-extra-icon">&#x1F552;</div>
+                        <h3>Business Hours</h3>
+                    </div>
+                    <p><strong>Monday – Friday:</strong> 9:00 am – 5:00 pm AEST<br>
+                    <strong>Weekend &amp; Public Holidays:</strong> Closed</p>
                     <p>For urgent after-hours repair enquiries, please leave a voicemail or email and we will respond on the next business day.</p>
                 </div>
 
-                <div class="content-card">
-                    <h4>What to Have Ready</h4>
+                <div class="contact-extra-card">
+                    <div class="contact-extra-header">
+                        <div class="contact-extra-icon">&#x1F4CB;</div>
+                        <h3>What to Have Ready</h3>
+                    </div>
                     <p>To help us respond quickly with an accurate quote, please have the following information available when you call or email:</p>
                     <ul>
                         <li>Scope manufacturer, model number, and serial number</li>
@@ -244,53 +297,39 @@
                     </ul>
                 </div>
 
-                <div class="content-card">
-                    <h4>Australia-Wide Service</h4>
-                    <p>While our workshop is based in Noble Park, Melbourne VIC, we service healthcare facilities across all Australian states and territories. Equipment is safely freighted to our workshop using insured couriers, and we provide prepaid return packaging on request. Most repairs are completed and returned within 5–10 business days.</p>
+                <div class="contact-extra-card">
+                    <div class="contact-extra-header">
+                        <div class="contact-extra-icon">&#x1F69A;</div>
+                        <h3>Australia-Wide Service</h3>
+                    </div>
+                    <p>While our workshop is based in Noble Park, Melbourne VIC, we service healthcare facilities across all Australian states and territories.</p>
+                    <p>Equipment is safely freighted to our workshop using insured couriers, and we provide prepaid return packaging on request. Most repairs are completed and returned within 5–10 business days.</p>
                 </div>
             </div>
-            
-            <div class="contact-form-wrapper">
-                <h3>Send a Message</h3>
-                <form id="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required placeholder="e.g. Dr. Sarah Miller">
-                        </div>
-                        <div class="form-group">
-                            <label for="facility">Facility / Hospital</label>
-                            <input type="text" id="facility" name="facility" required placeholder="e.g. Royal Melbourne Hospital">
+
+            <!-- WORKSHOP GOOGLE MAP -->
+            <div class="contact-map-card">
+                <div class="contact-map-header">
+                    <div class="contact-map-title">
+                        <div class="contact-extra-icon" style="width: 38px; height: 38px; font-size: 1.1rem;">&#x1F4CD;</div>
+                        <div>
+                            <h3>Melbourne Service Workshop</h3>
+                            <span>3 Barnett Grove, Noble Park VIC 3174, Australia</span>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="name@hospital.com.au">
-                    </div>
-                    <div class="form-group">
-                        <label for="service">Service Needed</label>
-                        <select id="service" name="service">
-                            <option>General Inquiry</option>
-                            <option>Repair Quote</option>
-                            <option>Loaner Request</option>
-                            <option>Sell Equipment</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
-                    </div>
-                    
-                    <div style="display:none;">
-                        <label>Leave this field empty</label>
-                        <input type="text" name="website" autocomplete="off">
-                    </div>
-                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
-                </form>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=3+Barnett+Grove+Noble+Park+VIC+3174+Australia" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.9rem;">Get Directions &nearr;</a>
+                </div>
+                <iframe
+                    class="contact-map-frame"
+                    title="Endoscope Services Workshop Location - 3 Barnett Grove, Noble Park VIC 3174"
+                    src="https://www.google.com/maps?q=3+Barnett+Grove,+Noble+Park+VIC+3174,+Australia&amp;output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
             </div>
-        </div>
-        <script src="https://www.google.com/recaptcha/api.js?render=6LdAA7AsAAAAAOgQUSfIto3glofDgBFDL-bep31N"></script>
+
+            <script src="https://www.google.com/recaptcha/api.js?render=6LdAA7AsAAAAAOgQUSfIto3glofDgBFDL-bep31N"></script>
         </div>
     </section>
 <footer class="site-footer">
@@ -355,8 +394,3 @@
 </body>
 
 </html>
-
-
-
-
-
