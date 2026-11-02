@@ -26,16 +26,30 @@ if (hamburger && mainNav) {
         }
     });
 
-    // Mobile dropdown toggle
+    // Mobile dropdown toggle: tapping the arrow toggles submenu; tapping link text navigates to the page
     const dropdownParents = mainNav.querySelectorAll('.has-dropdown');
     dropdownParents.forEach(parent => {
         const link = parent.querySelector('.nav-link');
-        link.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                parent.classList.toggle('open');
-            }
-        });
+        const arrow = link ? link.querySelector('.dropdown-arrow') : null;
+
+        if (arrow) {
+            arrow.setAttribute('role', 'button');
+            arrow.setAttribute('aria-label', 'Toggle submenu');
+            arrow.setAttribute('tabindex', '0');
+        }
+
+        if (link) {
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    const clickedArrow = e.target.closest('.dropdown-arrow');
+                    if (clickedArrow) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        parent.classList.toggle('open');
+                    }
+                }
+            });
+        }
     });
 }
 
@@ -136,10 +150,30 @@ if (contactForm) {
 }
 
 // ── Active nav link highlighting ──
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const normalizePath = (p) => {
+    if (!p) return '/';
+    let clean = p.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+    if (clean.length > 1 && clean.endsWith('/')) {
+        clean = clean.slice(0, -1);
+    }
+    return clean.startsWith('/') ? clean : '/' + clean;
+};
+const currentPath = normalizePath(window.location.pathname);
+
 document.querySelectorAll('.nav-link').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    const href = normalizePath(link.getAttribute('href'));
+    const parentDropdown = link.closest('.has-dropdown');
+    let isChildActive = false;
+
+    if (parentDropdown) {
+        parentDropdown.querySelectorAll('.dropdown-menu a').forEach(subLink => {
+            if (normalizePath(subLink.getAttribute('href')) === currentPath) {
+                isChildActive = true;
+            }
+        });
+    }
+
+    if (href === currentPath || isChildActive) {
         link.classList.add('active');
     } else {
         link.classList.remove('active');
