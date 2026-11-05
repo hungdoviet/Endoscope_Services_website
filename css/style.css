@@ -883,9 +883,9 @@ ul { list-style: none; }
     background: var(--clr-dark);
     padding: 60px 0 80px;
 }
-.page-content .container { max-width: 860px; }
-/* Equipment-for-sale uses the full width container */
+.page-content .container { max-width: 1200px; }
 .page-content.page-content--wide .container { max-width: 1200px; }
+.page-content > .container > h2:first-child { margin-top: 0; }
 .page-content h2 {
     font-size: 1.6rem;
     font-weight: 800;
@@ -942,6 +942,12 @@ ul { list-style: none; }
     border-radius: var(--radius-md);
     padding: 28px;
     transition: var(--transition);
+}
+.content-card + .content-card {
+    margin-top: 24px;
+}
+.two-col-grid > .content-card + .content-card {
+    margin-top: 0;
 }
 .content-card:hover { border-color: rgba(14,165,233,0.25); }
 .content-card h3 {
@@ -1593,7 +1599,7 @@ ul { list-style: none; }
     color: var(--clr-mid);
     font-size: 1.05rem;
     line-height: 1.7;
-    max-width: 800px;
+    max-width: 100%;
     margin-bottom: 24px;
 }
 .subpage-cta-box {
@@ -1644,6 +1650,9 @@ ul { list-style: none; }
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+.page-content .faq-accordion-container {
+    max-width: 100%;
 }
 
 .faq-accordion-item {
